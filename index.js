@@ -1,7 +1,7 @@
 var readlineSync = require('readline-sync');
 var score = 0;
 var username = readlineSync.question("what is your name..?")
-console.log("hello " + username + " Let's have a fun quiz..?")
+console.log("hello " + username + " Let's have a fun quiz about bollywood..?")
 function play(question, answer) {
   var useranswer = readlineSync.question(question)
   if (answer === useranswer) {
@@ -16,20 +16,20 @@ function play(question, answer) {
 }
 var questions = [
   {
-    question: "what type of music I like..? ",
-    answer: "EDM"
+    question: "which  bollywood movie is the watched movie(2021)..? ",
+    answer: "Haseen Dillruba"
   }, {
-    question: "who is my fav rapper(hollywood).? ",
-    answer: "wiz khalifa"
+    question: "who is the most famous rapper in bollywood.? ",
+    answer: "Badshah"
   }, {
-    question: "my fav. song .? ",
-    answer: "honest"
+    question: "Most viewed song in bollywood .? ",
+    answer: " Daru Badnam"
   }, {
-    question: "my fav.movie  .? ",
-    answer: "shershah"
+    question: "Best actor in bollywood  .? ",
+    answer: "Salman khan"
   }, {
-    question: "my fav.series.? ",
-    answer: "YOU"
+    question: "Best actress in bollywood.? ",
+    answer: "Alia bhatt"
   }];
 
 for (i = 0; i < questions.length; i++) {
