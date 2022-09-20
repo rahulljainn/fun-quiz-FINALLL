@@ -4,7 +4,7 @@ var username = readlineSync.question("what is your name..?")
 console.log("hello " + username + " Let's have a fun quiz about bollywood..?")
 function play(question, answer) {
   var useranswer = readlineSync.question(question)
-  if (answer === useranswer) {
+  if (answer.toLowerCase() == useranswer.toLowerCase()) {
     console.log("right!")
     score = score + 1;
   }
